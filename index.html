@@ -133,7 +133,7 @@
                 <a href="https://dataverse.tdl.org/dataset.xhtml?persistentId=doi:10.18738/T8/DC4J0Q"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="fab fa-youtube"></i>
+                      <i class="fab fa-download"></i>
                   </span>
                   <span>Dataset</span>
                 </a>
@@ -158,29 +158,17 @@
 </section>
 
 
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">EgoNRG: Egocentric Navigation Gesture Dataset</span>
+        <span class="dnerf">EgoNRG: Egocentric Navigation Robot Gesture Dataset</span>
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/_gesture_example_video.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Third person point of view of the gestures captured from the first-person (egocentric) view in the EgoNRG dataset.</span>
-      </h2>
-    </div>
-  </div>
-</section>
+
 
 
 <!--
@@ -245,6 +233,16 @@
 
 <section class="section">
   <div class="container is-max-desktop">
+    <!-- Paper image. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">EgoNRG: Egocentric Navigation Robot Gesture Dataset</h2>
+        <div class="publication-image">
+          <img src="./static/images/dataset_overview.png" alt="EgoNRG Dataset Overview" style="width: 100%; max-width: 800px;">
+        </div>
+      </div>
+    </div>
+    <!--/ Paper image. -->
     <!-- Abstract -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -272,7 +270,6 @@
       </div>
     </div>
     <!--/ Abstract. !--> 
-
     <!-- Paper video.
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -284,16 +281,45 @@
       </div>
     </div>
     <!-/ Paper video. -->
-    <!-- Paper image. -->
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Example Segmentations -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Overview</h2>
         <div class="publication-image">
-          <img src="./static/images/dataset_overview.png" alt="EgoNRG Dataset Overview" style="width: 100%; max-width: 800px;">
+          <img src="./static/images/dataset_masks_subset.png" alt="EgoNRG Dataset Segmeentation Examples" style="width: 100%; max-width: 800px;">
         </div>
       </div>
     </div>
-    <!--/ Paper image. -->
+    <!--/ Example Segmentations -->
+      <!-- Example Segmentations -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Gestures</h2>
+          <div class="publication-image">
+            <img src="./static/images/gestures_overview_static.png" alt="EgoNRG Dataset Gestures" style="width: 100%; max-width: 800px;">
+          </div>
+        </div>
+      </div>
+      <!--/ Example Segmentations -->
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/_gesture_example_video.mp4"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">Third person point of view of the gestures captured from the first-person (egocentric) view in the EgoNRG dataset.</span>
+      </h2>
+    </div>
   </div>
 </section>
 
