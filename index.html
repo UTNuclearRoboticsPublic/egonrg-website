@@ -88,8 +88,16 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Egocentric Gesture Dataset for Robust Human-Robot Communication via Head
-            Mounted Devices in Industrial and Military Settings</h1>
+          <h1 class="title is-1 publication-title">EgoNRG</h1>
+          <h2 class="title is-2 publication-title">Egocentric Gesture Dataset for Robust Human-Robot Communication via Head
+            Mounted Devices in Industrial and Military Settings</h2>
+          <div class ="column is-full_width">
+            <h2 class="title is-4">
+              "Winter Conference on Applications of Computer Vision ("
+              <a href="https://wacv.thecvf.com/">WACV</a>
+              ") 2026 (Submitted - Under Review)"
+            </h2>
+          </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://frankregal.com">Author 1</a><sup>1</sup>,</span>
@@ -104,7 +112,7 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Institution Removed for Double Blind Review</span>
+            <span class="author-block"><sup>1</sup>Institution Hidden for Blind Review</span>
           </div>
 
           <div class="column has-text-centered">
@@ -233,16 +241,6 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Paper image. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">EgoNRG: Egocentric Navigation Robot Gestures</h2>
-        <div class="publication-image">
-          <img src="./static/images/dataset_overview.png" alt="EgoNRG Dataset Overview" style="width: 100%; max-width: 800px;">
-        </div>
-      </div>
-    </div>
-    <!--/ Paper image. -->
     <!-- Abstract -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -269,6 +267,23 @@
         </div>
       </div>
     </div>
+    <!-- Paper image. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="publication-image">
+          <img src="./static/images/dataset_overview.png" alt="EgoNRG Dataset Overview" style="width: 100%; max-width: 800px;">
+        </div>
+        <div class="content has-text-justified">
+          <p style="margin-top: 30px">
+            Overview of the EgoNRG dataset contents. The dataset contains 3,044 videos and 160,639 annotated frames captured from 
+            the egocentric perspective. 32 participants performed 12 gestures related to ground vehicle robot control. The dataset features
+            conditions with and without background people visible, and both indoor and outdoor environments. The dataset was also recorded from
+            four synchronized monochrome cameras each with a different perspective of each gesture performed by the participants.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Paper image. -->
     <!--/ Abstract. !--> 
     <!-- Paper video.
     <div class="columns is-centered has-text-centered">
@@ -286,16 +301,15 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Section Title -->
-    <div class="columns is-centered has-text-justified">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Dataset Overview</h2>
-        <div class="content has-text-justified">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Dataset Overview</h2>
           <p>
-            This comprehensive dataset features joint hand and arm segmentations captured from 32 participants 
-            (14 females and 18 males) performing gesture-based commands for ground vehicle robot control. The 
+            EgoNRG -Egocentric Navigation Robot Gestures- is a comprehensive dataset features joint hand and arm segmentations captured from 32 participants 
+            (14 females and 18 males) performing 12 gesture-based commands for ground vehicle robot control. The 
             participants were divided into four groups of eight, with each group executing a specific set of 
-            four gestures from a total of 12 gestures. The dataset encompasses 3,044 videos and 160,639 annotated frames. The dataset features:
+            four gestures. Ten of the twelve gestures were derived from the Army Field Manual, 1 deictic gesture, and 1 emblem gesture. The dataset encompasses 3,044 videos and 160,639 annotated frames. The dataset features:
           </p>
           <ul> 
             <li>Joint hand and arm segmentations of each participants' left and right limb.</li>
@@ -357,21 +371,26 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Gesture Classes</h2>
-          <p>
-            The dataset contains 12 gesture classes, including 10 Army Field Manual-derived gestures, 
-            1 deictic gesture, and 1 emblem gesture. Below you can see an example of each gesture class.
-          </p>
-          <div class="publication-image">
-            <img src="./static/images/gestures_overview_static.png" alt="EgoNRG Dataset Gestures" style="width: 100%; max-width: 800px;">
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="publication-image">
+                <img src="./static/images/gestures_overview_static.png" alt="EgoNRG Dataset Gestures" style="width: 100%; max-width: 800px;">
+              </div>
+            </div>
           </div>
-          <p>
-            Below is a video recorded in the third-person view showing an example of each gesture 
+          <p style="margin-top: 30px">
+            Above is an image depicting a static representation of the 12 gestures performed in the dataset. 10 where adopted from the Army Field Manual, and 
+            1 is a deictic gesture "point", and 1 emblem gesture "approve". Below is a video recorded in the third-person view showing an example of each gesture 
             class that was captured in the dataset from the first-person view.
           </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/gesture_examples.mp4"
                     type="video/mp4">
           </video>
+          <p style="margin-top: 30px">
+            Above is a video showing the 12 gestures being performed from the third-person viewpoint. This is just for reference.
+            All gestures in the dataset were performed from the first-person point of view.
+          </p>
         </div>
       </div> 
     </div>
@@ -384,10 +403,6 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Example Videos</h2>
-          <p>
-            Below are example videos from the dataset. You can see the gestures being performed by the operator
-            in the first-person view.
-          </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/example_videos_a.mp4"
                     type="video/mp4">
@@ -396,6 +411,11 @@
             <source src="./static/videos/example_videos_b.mp4"
                     type="video/mp4">
           </video>
+          <p style="margin-top: 30px">
+            Examples of raw videos captured from the various viewpoints of the cameras. You can see gestures being performed
+            in both indoor and outdoor environments, with participants wearing long sleeves and gloves as well as bare skin,
+            in varying lighting conditions, with and without background people visible.
+          </p>
         </div>
       </div> 
     </div>
@@ -408,14 +428,15 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-3">Example Viewpoints</h2>
-          <p>
-            Below is a combined video of the four different viewpoints that were captured in the dataset.
-            You can see the gestures being performed by the operator in the first-person view.
-          </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/combined_video_example.mp4"
                     type="video/mp4">
           </video>
+          <p style="margin-top: -30px">
+            This video shows all four viewpoints that were captured in the dataset for each gesture performed by the participants.
+            You can see that in each viewpoint, the part of the participants hand that is visible is different across viewpoints,
+            hence providing more information for training models that can generalize to other egocentric vision platforms.
+          </p>
         </div>
       </div> 
     </div>
@@ -554,15 +575,6 @@
 
 <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
@@ -570,10 +582,8 @@
             This website is licensed under a <a rel="license"
                                                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            Based on the Nerfies website. <a
-              href="https://github.com/nerfies/nerfies.github.io">Source code.</a>.
+            This webpage template is from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. 
+            Thank you to <a href="https://github.com/keunhong">Keunhong Park</a> for developing and open-sourcing this template.
           </p>
         </div>
       </div>
