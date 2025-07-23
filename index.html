@@ -346,12 +346,12 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="publication-image">
-          <img src="./static/images/dataset_masks_subset.png" alt="EgoNRG Dataset Gestures" style="width: 100%; max-width: 800px;">
+          <img src="./static/images/dataset_masks_subset.png" alt="EgoNRG Dataset Gestures" style="width: 100%;">
         </div>
       </div>
     </div>
     <div class="columns is-centered has-text-justified">
-        <p style="margin-top: 30px">
+        <p style="margin-top: 20px">
           These are examples of the segmentation masks that were annotated for the EgoNRG dataset.
           You can seee the segmentation masks created for the joint hand-arm for both the left and right limbs.
           You can also see how the dataset has varying clothing conditions, light conditions, and background people visible.
@@ -383,7 +383,7 @@
           <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
               <div class="publication-image">
-                <img src="./static/images/gestures_overview_static.png" alt="EgoNRG Dataset Gestures" style="width: 100%; max-width: 800px;">
+                <img src="./static/images/gestures_overview_static.png" alt="EgoNRG Dataset Gestures" style="width: 100%;">
               </div>
             </div>
           </div>
@@ -396,7 +396,7 @@
             <source src="./static/videos/gif_gesture_examples.mp4"
                     type="video/mp4">
           </video>
-          <p style="margin-top: 30px">
+          <p style="margin-top: 0px">
             Above is a video showing the 12 gestures being performed from the third-person viewpoint. This is just for reference.
             All gestures in the dataset were captured using the first-person point of view.
           </p>
@@ -438,16 +438,15 @@
         <div class="content">
           <h2 class="title is-3">Example Viewpoints</h2>
           <div class="columns is-centered has-text-centered">
-            <p style="margin-top: -60px"></p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/combined_video_example_cropped.mp4"
-                    type="video/mp4">
-          </video>
-          <p style="margin-top: 0px">
-            This video shows all four viewpoints that were captured in the dataset for each gesture performed by the participants.
-            You can see that in each viewpoint, the part of the participants hand that is visible is different across viewpoints,
-            hence providing more information for training models that can generalize to other egocentric vision platforms.
-          </p>
+            <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/combined_video_example_cropped.mp4"
+                      type="video/mp4">
+            </video>
+            <p style="margin-top: 0px">
+              This video shows all four viewpoints that were captured in the dataset for each gesture performed by the participants.
+              You can see that in each viewpoint, the part of the participants hand that is visible is different across viewpoints,
+              hence providing more information for training models that can generalize to other egocentric vision platforms.
+            </p>
         </div>
       </div> 
     </div>
