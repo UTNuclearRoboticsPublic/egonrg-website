@@ -348,7 +348,11 @@
         <div class="publication-image">
           <img src="./static/images/dataset_masks_subset.png" alt="EgoNRG Dataset Gestures" style="width: 100%; max-width: 800px;">
         </div>
-        <p>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-justified">
+      <div class="column is-four-fifths">
+        <p style="margin-top: 30px">
           These are examples of the segmentation masks that were annotated for the EgoNRG dataset.
           You can seee the segmentation masks created for the joint hand-arm for both the left and right limbs.
           You can also see how the dataset has varying clothing conditions, light conditions, and background people visible.
@@ -411,11 +415,11 @@
         <div class="content">
           <h2 class="title is-3">Example Videos</h2>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/example_videos_a.mp4"
+            <source src="./static/videos/example_videos_a_cropped.mp4"
                     type="video/mp4">
           </video>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/example_videos_b.mp4"
+            <source src="./static/videos/example_videos_b_cropped.mp4"
                     type="video/mp4">
           </video>
           <p style="margin-top: 30px">
@@ -438,10 +442,10 @@
           <div class="columns is-centered has-text-centered">
             <p style="margin-top: -60px"></p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/combined_video_example.mp4"
+            <source src="./static/videos/combined_video_example_cropped.mp4"
                     type="video/mp4">
           </video>
-          <p style="margin-top: -60px">
+          <p style="margin-top: -30px">
             This video shows all four viewpoints that were captured in the dataset for each gesture performed by the participants.
             You can see that in each viewpoint, the part of the participants hand that is visible is different across viewpoints,
             hence providing more information for training models that can generalize to other egocentric vision platforms.
