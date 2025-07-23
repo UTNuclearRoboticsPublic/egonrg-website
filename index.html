@@ -290,6 +290,22 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Dataset Overview</h2>
+        <p>
+          This comprehensive dataset features joint hand and arm segmentations captured from 32 participants 
+          (14 females and 18 males) performing gesture-based commands for ground vehicle robot control. The 
+          participants were divided into four groups of eight, with each group executing a specific set of 
+          four gestures from a total repertoire of 12 standardized movements that directly correspond to 
+          common robotic commands such as stop, move forward, go left, and move in reverse. To ensure real-
+          world applicability, data collection occurred under diverse conditions including both clothed 
+          scenarios (participants wearing flame-resistant solid color clothing and military camouflage with 
+          long sleeves and gloves) and bare skin conditions, mimicking industrial and military operational 
+          environments. The dataset encompasses 3,044 videos, captured using four synchronized monochrome cameras providing different perspectives for each 
+          gesture performance. Data collection spanned various temporal and spatial contexts, including 
+          indoor and outdoor environments at different times of day (morning, midday, and dusk), with and 
+          without background people present. The resulting dataset contains 160,639 annotated 
+          frames featuring pixel-based segmentations of participants' left and right limbs, where hands and 
+          arms are segmented together.
+        </p>
       </div>
     </div>
     <!--/ Section Title -->
@@ -373,15 +389,6 @@
           </video>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
             <source src="./static/videos/example_videos_b.mp4"
-                    type="video/mp4">
-          </video>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-          <p>
-            Below is a combined video of the four different viewpoints that were captured in the dataset.
-            You can see the gestures being performed by the operator in the first-person view.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/combined_video_example.mp4"
                     type="video/mp4">
           </video>
         </div>
